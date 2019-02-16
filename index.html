@@ -285,12 +285,13 @@
             <li class="next">create child and mount into native UI</li>
             <li class="next">calculate changed props</li>
             <li class="next">send an update signal to the host environment</li>
+            <li class="next">remove "widget"</li>
         </ol>
     </section>
 
     <section class="slide" id="cover">
 
-        <h2>Build your own React Native!</h2>
+        <h2>Build Your Own <br /> React Native!</h2>
 
         <img src="images/react-logo.png" />
         <style>
@@ -315,6 +316,40 @@
         </style>
     </section>
 
+        <section class="slide">
+            <div class="image-center-container">
+                <img src="./images/build-rn-one-video.jpg" width="750">
+            </div>
+        </section>
+
+    <section class="slide">
+        <h2>What do we need?</h2>
+        <ul class="big-list">
+            <li><b>Imperative API</b></li>
+            <ol>
+                <li class="next">e.g document.createElement</li>
+                <li class="next">appendChild</li>
+                <li class="next">removeChild</li>
+                <li class="next">addEventListener</li>
+                <li class="next">...</li>
+            </ol>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>What do we need?</h2>
+        <ul class="big-list">
+            <li><b>Different languages bindings</b></li>
+            <ol>
+                <li class="next">ideally, JavaScript (node.js)</li>
+                <li class="next">Python</li>
+                <li class="next">Rust</li>
+                <li class="next">...</li>
+            </ol>
+        </ul>
+    </section>
+
+
     <section class="slide">
         <h2>Native UI frameworks</h2>
         <ul class="big-list">
@@ -330,6 +365,75 @@
         </ul>
     </section>
 
+    <section class="slide">
+        <h2>Native UI frameworks</h2>
+        <ul class="big-list">
+            <li class="next"><b>Mobile:</b> iOS / Android – already exists</li>
+            <li class="next"><b>Desktop:</b></li>
+            <ol>
+                <li class="next">Windows Presentation Foundation</li>
+                <li class="next">Windows Forms</li>
+                <li class="next">Qt</li>
+                <li class="next">Gnome Toolkit (Gtk+)</li>
+            </ol>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>WPF XML for Applications (XAML)</h2>
+        <div class="image-center-container">
+            <img src="./images/xaml-example.png"  width="600" height="500" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Solution</h2>
+        <h2>Gtk!</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Gtk widgets overview</h2>
+        <h2>Screenshot here</h2>
+    </section>
+
+    <section class="slide" id="thanks">
+        <h2 class="shout shrink">Demo 1: <br/> Python, Gtk, imperative API</h2>
+    </section>
+
+    <section class="slide">
+        <h2>General architecture</h2>
+        <div class="image-center-container">
+            <img src="./images/concept_01_1.jpg" width="1000" height="365" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Communication channel: WebSocket</h2>
+        <ul class="big-list">
+            <ol>
+                <li class="next">TODO: scheme:</li>
+            </ol>
+        </ul>
+    </section>
+
+
+    <section class="slide">
+        <h2>RPC examples</h2>
+        <ul class="big-list">
+            <ol>
+                <li class="next">TODO: scheme:</li>
+            </ol>
+        </ul>
+    </section>
+
+    <section class="slide" id="thanks">
+        <h2 class="shout shrink">Demo 2: <br /> Python, Gtk, imperative API via RPC</h2>
+    </section>
+
+    <section class="slide" id="thanks">
+        <h2 class="shout shrink">Demo 3: <br /> React renderer</h2>
+    </section>
+
     <section class="slide" id="references">
         <h2>References</h2>
         <ul>
@@ -341,7 +445,6 @@
     <section class="slide" id="thanks">
         <h2 class="shout shrink">Thanks!</h2>
     </section>
-
 
     <div class="progress"></div>
     <script src="node_modules/shower-core/shower.min.js"></script>
