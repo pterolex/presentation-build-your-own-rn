@@ -34,17 +34,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 75%;
         }
 
-        .mihome .container {
-            display: flex;
-            justify-content: center;
+        .demo-text.shout {
+            font-size: 80px;
         }
 
-        .mihome img {
-            width: 300px;
-            position: absolute;
-        }
     </style>
     <script>
 
@@ -316,22 +312,22 @@
         </style>
     </section>
 
-        <section class="slide">
-            <div class="image-center-container">
-                <img src="./images/build-rn-one-video.jpg" width="750">
-            </div>
-        </section>
+    <section class="slide">
+        <div class="image-center-container">
+            <img src="./images/build-rn-one-video.jpg" width="750">
+        </div>
+    </section>
 
     <section class="slide">
         <h2>What do we need?</h2>
         <ul class="big-list">
-            <li><b>Imperative API</b></li>
+            <li>Cross-platform</li>
+            <li class="next"><b>Imperative API</b></li>
             <ol>
                 <li class="next">e.g document.createElement</li>
                 <li class="next">appendChild</li>
                 <li class="next">removeChild</li>
                 <li class="next">addEventListener</li>
-                <li class="next">...</li>
             </ol>
         </ul>
     </section>
@@ -344,22 +340,6 @@
                 <li class="next">ideally, JavaScript (node.js)</li>
                 <li class="next">Python</li>
                 <li class="next">Rust</li>
-                <li class="next">...</li>
-            </ol>
-        </ul>
-    </section>
-
-
-    <section class="slide">
-        <h2>Native UI frameworks</h2>
-        <ul class="big-list">
-            <li class="next"><b>Mobile:</b> iOS / Android – already exists</li>
-            <li class="next"><b>Desktop:</b></li>
-            <ol>
-                <li class="next">Windows Presentation Foundation</li>
-                <li class="next">Windows Forms</li>
-                <li class="next">Qt</li>
-                <li class="next">Gnome Toolkit (Gtk+)</li>
                 <li class="next">...</li>
             </ol>
         </ul>
@@ -386,18 +366,39 @@
         </div>
     </section>
 
+
     <section class="slide">
-        <h2>Solution</h2>
-        <h2>Gtk!</h2>
+        <h2>Solution – Gtk+</h2>
+        <div class="image-center-container">
+            <img src="./images/gtk_ui_demo.png" width="650" height="500" />
+        </div>
     </section>
 
     <section class="slide">
-        <h2>Gtk widgets overview</h2>
-        <h2>Screenshot here</h2>
+        <h2>Houston, we have a problem!</h2>
+        <div class="image-center-container">
+            <img src="./images/gtk_c_code.png" width="650" height="500" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Houston, we have a problem №2!</h2>
+        <ul class="big-list">
+            <li class="next">Binding for JS uses SpiderMonkey 🦊</li>
+            <li class="next">No node.js 😭</li>
+            <li class="next">Let's do some Python 👻</li>
+        </ul>
     </section>
 
     <section class="slide" id="thanks">
-        <h2 class="shout shrink">Demo 1: <br/> Python, Gtk, imperative API</h2>
+        <h2 class="shout shrink demo-text">
+            <b>Demo 1:</b>
+            <br />
+            <br />
+            Python, Gtk
+            <br />
+            Imperative API
+        </h2>
     </section>
 
     <section class="slide">
@@ -407,31 +408,97 @@
         </div>
     </section>
 
+
     <section class="slide">
-        <h2>Communication channel: WebSocket</h2>
+        <h2>Communication channel requirements</h2>
         <ul class="big-list">
-            <ol>
-                <li class="next">TODO: scheme:</li>
-            </ol>
+            <li class="next">Lightweight</li>
+            <li class="next">Duplex</li>
         </ul>
     </section>
 
+    <section class="slide">
+        <h2>How can we communicate?</h2>
+        <div class="image-center-container">
+            <img src="./images/concept_communication_channels.jpg" width="1000" height="365" />
+        </div>
+    </section>
+
 
     <section class="slide">
-        <h2>RPC examples</h2>
-        <ul class="big-list">
-            <ol>
-                <li class="next">TODO: scheme:</li>
-            </ol>
-        </ul>
+        <h2>What do we send?</h2>
+        <div class="image-center-container">
+            <img src="./images/what_do_we_send.png" width="800" height="550" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Keeping track of elements</h2>
+        <div class="image-center-container">
+            <img src="./images/widgets_registry.png" width="800" height="500" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Remote Procedure Calls: to UI</h2>
+        <div class="image-center-container">
+            <img src="./images/rpc_create_element.png" width="600" height="400" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Remote Procedure Calls: to UI</h2>
+        <div class="image-center-container">
+            <img src="./images/rpc_append_child.png" width="600" height="300" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Remote Procedure Calls: to UI</h2>
+        <div class="image-center-container">
+            <img src="./images/rpc_set_method.png" width="600" height="300" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Remote Procedure Calls: to UI</h2>
+        <div class="image-center-container">
+            <img src="./images/rpc_remove_element.png" width="600" height="400" />
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Remote Procedure Calls: from UI</h2>
+        <div class="image-center-container">
+            <img src="./images/rpc_event.png" width="600" height="350" />
+        </div>
     </section>
 
     <section class="slide" id="thanks">
-        <h2 class="shout shrink">Demo 2: <br /> Python, Gtk, imperative API via RPC</h2>
+        <h2 class="shout shrink demo-text">
+            <b>Demo 2:</b>
+            <br />
+            <br />
+            Python, Gtk
+            <br />
+            Imperative API via RPC
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2>Architecture diagram</h2>
+        <div class="image-center-container">
+            <img src="./images/concept_react_full_scheme.jpg" width="900" height="500" />
+        </div>
     </section>
 
     <section class="slide" id="thanks">
-        <h2 class="shout shrink">Demo 3: <br /> React renderer</h2>
+        <h2 class="shout shrink demo-text">
+            <b>Demo 3:</b>
+            <br />
+            <br />
+            React Renderer
+        </h2>
     </section>
 
     <section class="slide" id="references">
