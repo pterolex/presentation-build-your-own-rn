@@ -180,39 +180,6 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout shrink">User interfaces?</h2>
-    </section>
-
-    <section class="slide">
-        <h2>React Hardware</h2>
-        <div class="image-center-container">
-            <img src="./images/arduino-board.png" width="500">
-        </div>
-    </section>
-
-    <section class="slide" id="hardware-code">
-        <h2>React Hardware</h2>
-        <div class="image-center-container">
-            <img src="./images/react-hardware-code.png" width="600">
-            <div class="black-mask next"></div>
-        </div>
-        <style>
-            #hardware-code .image-center-container {
-                position: relative;
-            }
-
-            #hardware-code .black-mask {
-                height: 368px;
-                width: 594px;
-                position: absolute;
-                top: 0;
-                background: rgba(0,0,0,0.7);
-            }
-        </style>
-    </section>
-
-
-    <section class="slide">
         <h2>Idea of a renderer:</h2>
         <ol class="big-list">
             <li class="next">Render user interfaces in different environments using the same tools</li>
@@ -273,18 +240,6 @@
         </style>
     </section>
 
-    <section class="slide">
-        <h2>React workflow for generic UI</h2>
-        <ol class="big-list">
-            <li>setState/forceUpdate</li>
-            <li class="next">update props of "widget" component</li>
-            <li class="next">create child and mount into native UI</li>
-            <li class="next">calculate changed props</li>
-            <li class="next">send an update signal to the host environment</li>
-            <li class="next">remove "widget"</li>
-        </ol>
-    </section>
-
     <section class="slide" id="cover">
 
         <h2>Build Your Own <br /> React Native!</h2>
@@ -312,10 +267,15 @@
         </style>
     </section>
 
-    <section class="slide">
+    <section class="slide" id="rn-meme">
         <div class="image-center-container">
-            <img src="./images/build-rn-one-video.jpg" width="750">
+            <img src="./images/build-rn-one-video.jpg" width="600">
         </div>
+        <style>
+            #rn-meme img {
+                margin-top: 150px;
+            }
+        </style>
     </section>
 
     <section class="slide">
